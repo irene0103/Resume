@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Irene's Resume</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="header.css" />
+    <style>
+      body {
+        background-color: #ead2ac;
+      }
+      main {
+        padding-top: 140px;
+        max-width: 1000px;
+        margin: auto;
+      }
+      .project {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+      }
+      .project-item {
+        width: 300px;
+        margin: 20px 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .project-item img {
+        width: 100%;
+        background-size: cover;
+        background-position: top;
+        background-color: #fff;
+        border-radius: 10px 10px 0 0;
+      }
+      .project-item h2 {
+        font-size: 20px;
+        margin: 10px 0;
+      }
+      .project-item .skill span {
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 8px;
+        padding: 5px 10px;
+        margin-top: 5px;
+        text-align: center;
+      }
+      .project-item p {
+        margin: 10px 0;
+        line-height: 1.3;
+      }
+      .project-item .demo-btn {
+        display: flex;
+        justify-content: center;
+      }
+      .project-item .demo-btn a {
+        border: 1px solid black;
+        margin: 10px 5px 0 5px;
+        border-radius: 10px;
+        padding: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="pic/home.svg" alt="home" />
+            <h1>IreneChang</h1>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li>
+              <a href="index.html"
+                ><span class="material-symbols-outlined">face</span>Profile</a
+              >
+            </li>
+            <li>
+              <a href="projects.html"
+                ><span class="material-symbols-outlined"> code_off </span
+                >Projects</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="link">
+          <a target="_blank" href="https://github.com/irene0103"
+            ><img src="pic/github.svg" alt="github"
+          /></a>
+          <a target="_blank" href="#"
+            ><img src="pic/linkedin.svg" alt="linkedin"
+          /></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="project">
+        <div class="project-item">
+          <img src="pic/SKATE-BRO_ index 1.png" alt="skate bro." />
+          <h2>個專 - SKATE BRO.</h2>
+          <div class="skill">
+            <span>Javascript</span>
+            <span>jQuery</span>
+            <span>RWD</span>
+          </div>
+          <p>SKATE BRO. 是一個以客製化板身為特色的滑板電商網站。</p>
+          <div class="demo-btn">
+            <a href="https://github.com/irene0103/17_-SKATE-BRO">Github</a>
+            <a href="https://irene0103.github.io/17_-SKATE-BRO/">Demo</a>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="pic/Timevolts_index 1.png" alt="Timevolts" />
+          <h2>團專 - TimeVolts</h2>
+          <div class="skill">
+            <span>Vue.js</span>
+            <span>VueCLI</span>
+            <span>Git</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>API</span>
+            <span>RWD</span>
+          </div>
+          <p>TIMEVOLTS 是一個可以讓旅人及學者回到過去旅行的旅遊平台。</p>
+          <div class="demo-btn">
+            <a href="https://github.com/irene0103/timevolts_pika">Github</a>
+            <a href="https://tibamef2e.com/cgd103/g3/Home">Demo</a>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="pic/AHT_index 1.png" alt="AHT" />
+          <h2>公司網頁改版</h2>
+          <div class="skill">
+            <span>Vue</span>
+            <span>SCSS</span>
+          </div>
+          <p>公司一頁式網站設計及改版</p>
+          <div class="demo-btn">
+            <a href="https://github.com/irene0103/aht-index">Github</a>
+            <a href="https://aht-website.netlify.app">Demo</a>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="pic/aht_eip.png" alt="AHT EIP" />
+          <h2>公司EIP入口網站</h2>
+          <div class="skill">
+            <span>Vue</span>
+            <span>SCSS</span>
+            <span>RWD</span>
+          </div>
+          <p>公司EIP入口網站設計</p>
+          <div class="demo-btn">
+            <a href="https://github.com/irene0103/AHT-EIP">Github</a>
+            <a href="#">Demo</a>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="pic/todolist.png" alt="skate bro." />
+          <h2>ToDo List</h2>
+          <div class="skill">
+            <span>Javascript</span>
+          </div>
+          <p>可以於網頁上新增、刪除、修改並儲存到localStorage</p>
+          <div class="demo-btn">
+            <a href="https://github.com/irene0103/ToDoLIst">Github</a>
+            <a href="https://irene0103.github.io/ToDoLIst/ToDoList.html"
+              >Demo</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
