@@ -10,7 +10,7 @@
       body {
         background-color: #ead2ac;
       }
-      main {
+      .main-container {
         padding-top: 140px;
         max-width: 1000px;
         margin: auto;
@@ -19,11 +19,10 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-content: flex-start;
       }
       .project-item {
         width: 300px;
-        margin: 20px 10px;
+        margin: 20px auto;
         border: 1px solid black;
         border-radius: 10px;
         padding: 10px;
@@ -100,8 +99,31 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="main-container">
       <section class="project">
+        <div class="project-item">
+          <img src="pic/weather.png" alt="weather" />
+          <h2>台灣各地當天天氣資訊</h2>
+          <div class="skill">
+            <span>SCSS</span>
+            <span>Vue.js</span>
+            <span>Axios</span>
+          </div>
+          <p>
+            利用中央氣象署開放資料平臺的
+            API，製作了一個可即時查看台灣各地當天天氣資訊的網站，包含溫度及天氣狀況。
+          </p>
+          <div class="demo-btn">
+            <a
+              target="_blank"
+              href="https://github.com/irene0103/Taiwan_weather"
+              >Github</a
+            >
+            <a target="_blank" href="https://taiwantodayweather.netlify.app/"
+              >Demo</a
+            >
+          </div>
+        </div>
         <div class="project-item">
           <img src="pic/SKATE-BRO_ index 1.png" alt="skate bro." />
           <h2>個專 - SKATE BRO.</h2>
@@ -152,7 +174,7 @@
             <span>SCSS</span>
             <span>RWD</span>
           </div>
-          <p>資訊公司一頁式網站設計及改版</p>
+          <p>資訊公司一頁式網站設計及改版。</p>
           <div class="demo-btn">
             <a target="_blank" href="https://github.com/irene0103/aht-index"
               >Github</a
@@ -168,7 +190,7 @@
             <span>SCSS</span>
             <span>RWD</span>
           </div>
-          <p>公司EIP入口網站設計</p>
+          <p>公司EIP入口網站設計。</p>
           <div class="demo-btn">
             <a target="_blank" href="https://github.com/irene0103/AHT-EIP"
               >Github</a
@@ -182,7 +204,7 @@
           <div class="skill">
             <span>Javascript</span>
           </div>
-          <p>可以於網頁上新增、刪除、修改並儲存到LocalStorage</p>
+          <p>可以於網頁上新增、刪除、修改並儲存到LocalStorage。</p>
           <div class="demo-btn">
             <a target="_blank" href="https://github.com/irene0103/ToDoLIst"
               >Github</a
@@ -201,7 +223,7 @@
             <span>Tailwind</span>
             <span>RWD</span>
           </div>
-          <p>使用Tailwind切版潛水網站</p>
+          <p>使用Tailwind切版一頁式潛水網站。</p>
           <div class="demo-btn">
             <a
               target="_blank"
@@ -213,6 +235,8 @@
             >
           </div>
         </div>
+        <div class="project-item" style="visibility: hidden"></div>
+        <div class="project-item" style="visibility: hidden"></div>
       </section>
     </main>
   </body>
