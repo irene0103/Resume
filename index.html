@@ -10,9 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
     <link rel="stylesheet" href="header.css" />
+    <script src="all.js"></script>
     <style>
       body {
         background-color: #ead2ac;
+        transition: background-color 0.3s;
       }
       main {
         padding-top: 150px;
@@ -60,7 +62,7 @@
         margin: 20px 0;
         cursor: pointer;
         transition: all 0.5s ease-out;
-        background: linear-gradient(to right, #f5eabb 50%, #ead2ac 50%);
+        background: linear-gradient(to right, #f5eabb 50%, #ead2ac00 50%);
         background-size: 200%;
         background-position: right;
       }
@@ -157,6 +159,7 @@
             href="https://www.linkedin.com/in/irene-chang-b7086519b/"
             ><img src="pic/linkedin.svg" alt="linkedin"
           /></a>
+          <button id="change" onclick="changeBackgroundColor()"></button>
         </div>
       </div>
     </header>
@@ -239,61 +242,4 @@
     </main>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
-  <script>
-    document
-      .getElementById("download-btn")
-      .addEventListener("click", function () {
-        // 選擇要轉換為 PDF 的整個頁面
-        const element = document.getElementById("resume");
-        const printStyles = document.createElement("style");
-        printStyles.innerHTML = `
-        #resume {
-          padding-top:0;
-        }
-        .intro blockquote {
-          font-size: 20px;
-        }
-        .intro .content {
-          font-size: 16px;
-        }
-        .info p{
-          margin-top:20px;
-        }
-        .education, .experience {
-          margin: 30px 50px;
-        }
-        .experience .work {
-          margin: 20px 0;
-        }  
-        .description{
-          margin-left:20px;
-        }
-        .experience span {
-          margin-top:5px;
-        }
-        button, nav,.link {
-          display: none;
-        }
-    `;
-        document.head.appendChild(printStyles);
-        // 配置 html2pdf 選項
-        const opt = {
-          margin: 0.5,
-          filename: "resume.pdf",
-          image: { type: "jpeg", quality: 0.98 },
-          html2canvas: { scale: 3 },
-          jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
-        };
-
-        // 將頁面轉換為 PDF 並觸發下載
-        html2pdf()
-          .set(opt)
-          .from(element)
-          .save()
-          .then(function () {
-            // PDF 生成完成後，移除打印樣式
-            document.head.removeChild(printStyles);
-          });
-      });
-  </script>
 </html>
