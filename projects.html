@@ -6,6 +6,10 @@
     <title>Irene's Resume</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="header.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <script src="all.js"></script>
     <style>
       body {
@@ -24,10 +28,16 @@
       .project-item {
         width: 300px;
         margin: 20px auto;
-        border: 1px solid black;
+        /* border: 2px solid #cebb9c37; */
         border-radius: 10px;
-        padding: 10px;
+        padding: 15px;
         box-sizing: border-box;
+        background-color: #f4f1e9;
+        box-shadow: 3px 3px 7px #aa987c;
+        transition: 0.3s;
+      }
+      .project-item:hover {
+        transform: scale(1.02);
       }
       .project-item img {
         width: 100%;
@@ -42,11 +52,12 @@
       }
       .project-item .skill span {
         display: inline-block;
-        border: 1px solid black;
+        /* border: 2px solid rgb(155, 154, 154); */
         border-radius: 8px;
         padding: 5px 10px;
         margin-top: 5px;
         text-align: center;
+        color: #fff;
       }
       .project-item p {
         margin: 10px 0;
@@ -62,6 +73,42 @@
         border-radius: 10px;
         padding: 10px;
         cursor: pointer;
+        i {
+          margin: 0 5px;
+        }
+      }
+      .vue {
+        background-color: #4fc08d;
+      }
+      .css {
+        background-color: #1472b6;
+      }
+      .js {
+        background-color: #323330;
+      }
+      .api {
+        background-color: #5a29e6;
+      }
+      .mssql {
+        background-color: #cc2827;
+      }
+      .mysql {
+        background-color: #f4a73c;
+      }
+      .git {
+        background-color: #f05032;
+      }
+      .rwd {
+        background-color: #563d7c;
+      }
+      .jquery {
+        background-color: #3c7ab0;
+      }
+      .asp {
+        background-color: #6aaae2;
+      }
+      .php {
+        background-color: #8175cc;
       }
     </style>
   </head>
@@ -109,9 +156,9 @@
           <img src="pic/weather.png" alt="weather" />
           <h2>台灣各地當天天氣資訊</h2>
           <div class="skill">
-            <span>SCSS</span>
-            <span>Vue.js</span>
-            <span>Axios</span>
+            <span class="css">SCSS</span>
+            <span class="vue">Vue</span>
+            <span class="api">Axios</span>
           </div>
           <p>
             利用中央氣象署開放資料平臺的
@@ -121,69 +168,69 @@
             <a
               target="_blank"
               href="https://github.com/irene0103/Taiwan_weather"
-              >Github</a
+              ><i class="fa-brands fa-github"></i>Github</a
             >
             <a target="_blank" href="https://taiwantodayweather.netlify.app/"
-              >Demo</a
-            >
+              >Demo<i class="fa-solid fa-play"></i
+            ></a>
           </div>
         </div>
         <div class="project-item">
           <img src="pic/SKATE-BRO_ index 1.png" alt="skate bro." />
           <h2>個專 - SKATE BRO.</h2>
           <div class="skill">
-            <span>Javascript</span>
-            <span>jQuery</span>
-            <span>RWD</span>
+            <span class="js">Javascript</span>
+            <span class="jquery">jQuery</span>
+            <span class="rwd">RWD</span>
           </div>
           <p>SKATE BRO. 是一個以客製化板身為特色的滑板電商網站。</p>
           <div class="demo-btn">
             <a target="_blank" href="https://github.com/irene0103/17_-SKATE-BRO"
-              >Github</a
+              ><i class="fa-brands fa-github"></i>Github</a
             >
             <a target="_blank" href="https://irene0103.github.io/17_-SKATE-BRO/"
-              >Demo</a
-            >
+              >Demo<i class="fa-solid fa-play"></i
+            ></a>
           </div>
         </div>
         <div class="project-item">
           <img src="pic/Timevolts_index 1.png" alt="Timevolts" />
           <h2>團專 - TimeVolts</h2>
           <div class="skill">
-            <span>Vue.js</span>
-            <span>VueCLI</span>
-            <span>Git</span>
-            <span>PHP</span>
-            <span>MySQL</span>
-            <span>RESTful API</span>
-            <span>RWD</span>
+            <span class="vue">Vue</span>
+            <span class="vue">VueCLI</span>
+            <span class="git">Git</span>
+            <span class="php">PHP</span>
+            <span class="mysql">MySQL</span>
+            <span class="api">RESTful API</span>
+            <span class="rwd">RWD</span>
           </div>
           <p>TIMEVOLTS 是一個可以讓旅人及學者回到過去旅行的旅遊平台。</p>
           <div class="demo-btn">
             <a
               target="_blank"
               href="https://github.com/irene0103/timevolts_pika"
-              >Github</a
+              ><i class="fa-brands fa-github"></i>Github</a
             >
             <a target="_blank" href="https://tibamef2e.com/cgd103/g3/Home"
-              >Demo</a
-            >
+              >Demo<i class="fa-solid fa-play"></i
+            ></a>
           </div>
         </div>
         <div class="project-item">
           <img src="pic/HR_Workflow.png" alt="AHT" />
           <h2>人資打卡系統</h2>
           <div class="skill">
-            <span>ASP.net(Razor Page)</span>
-            <span>MSSQL</span>
-            <span>AJAX</span>
+            <span class="asp">ASP.net(Razor Page)</span>
+            <span class="mssql">MSSQL</span>
+            <span class="api">AJAX</span>
           </div>
           <p>
-            提供員工出勤管理功能，包括打卡記錄、排班設定和報表生成等核心功能，目前系統的基礎結構已完成，但細節功能尚未完全實現或完善。
+            員工出勤管理功能，目前系統的基礎結構已完成，但細節功能尚未完全實現或完善。
           </p>
           <div class="demo-btn">
             <a target="_blank" href="https://github.com/irene0103/HR_WorkFlow"
-              >Github</a
+              ><i class="fa-brands fa-github"></i>Github</a
             >
             <!-- <a target="_blank" href="https://aht-website.netlify.app">Demo</a> -->
           </div>
@@ -192,69 +239,73 @@
           <img src="pic/AHT_index 1.png" alt="AHT" />
           <h2>資訊公司網頁改版</h2>
           <div class="skill">
-            <span>Vue</span>
-            <span>SCSS</span>
-            <span>RWD</span>
+            <span class="vue">Vue</span>
+            <span class="css">SCSS</span>
+            <span class="rwd">RWD</span>
           </div>
           <p>資訊公司一頁式網站設計及改版。</p>
           <div class="demo-btn">
             <a target="_blank" href="https://github.com/irene0103/aht-index"
-              >Github</a
+              ><i class="fa-brands fa-github"></i>Github</a
             >
-            <a target="_blank" href="https://aht-website.netlify.app">Demo</a>
+            <a target="_blank" href="https://aht-website.netlify.app"
+              >Demo<i class="fa-solid fa-play"></i
+            ></a>
           </div>
         </div>
         <div class="project-item">
           <img src="pic/aht_eip.png" alt="AHT EIP" />
           <h2>公司EIP入口網站</h2>
           <div class="skill">
-            <span>Vue</span>
-            <span>SCSS</span>
-            <span>RWD</span>
+            <span class="vue">Vue</span>
+            <span class="css">SCSS</span>
+            <span class="rwd">RWD</span>
           </div>
           <p>公司EIP入口網站設計。</p>
           <div class="demo-btn">
             <a target="_blank" href="https://github.com/irene0103/AHT-EIP"
-              >Github</a
+              ><i class="fa-brands fa-github"></i>Github</a
             >
-            <a target="_blank" href="https://aht-eip.netlify.app/">Demo</a>
+            <a target="_blank" href="https://aht-eip.netlify.app/"
+              >Demo<i class="fa-solid fa-play"></i
+            ></a>
           </div>
         </div>
         <div class="project-item">
           <img src="pic/tailwind.png" alt="tailwind" />
           <h2>Tailwind切版練習</h2>
           <div class="skill">
-            <span>Tailwind</span>
-            <span>RWD</span>
+            <span class="css">Tailwind</span>
+            <span class="rwd">RWD</span>
           </div>
           <p>使用Tailwind切版一頁式潛水網站。</p>
           <div class="demo-btn">
             <a
               target="_blank"
               href="https://github.com/irene0103/Tailwind_practice"
-              >Github</a
+              ><i class="fa-brands fa-github"></i>Github</a
             >
             <a target="_blank" href="https://tailwind-practicee.netlify.app/"
-              >Demo</a
-            >
+              >Demo<i class="fa-solid fa-play"></i
+            ></a>
           </div>
         </div>
         <div class="project-item">
           <img src="pic/todolist.png" alt="todolist" />
           <h2>ToDo List</h2>
           <div class="skill">
-            <span>Javascript</span>
+            <span class="js">Javascript</span>
           </div>
           <p>可以於網頁上新增、刪除、修改並儲存到LocalStorage。</p>
           <div class="demo-btn">
             <a target="_blank" href="https://github.com/irene0103/ToDoLIst"
-              >Github</a
+              ><i class="fa-brands fa-github"></i>Github</a
             >
             <a
               target="_blank"
               href="https://irene0103.github.io/ToDoLIst/ToDoList.html"
-              >Demo</a
-            >
+              >Demo<i class="fa-solid fa-play"></i
+            ></a>
           </div>
         </div>
         <div class="project-item" style="visibility: hidden"></div>
