@@ -33,6 +33,7 @@
 .logo h1 {
   font-size: 25px;
   padding: 10px;
+  align-self: center;
 }
 .main-nav {
   margin: auto;
